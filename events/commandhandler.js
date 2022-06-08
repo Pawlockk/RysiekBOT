@@ -30,7 +30,7 @@ module.exports = {
                       let parsed = await bot.db.fetch(`videoData`);
                       let channel = await bot.channels.fetch('676382885652987904');
                       if (!channel) return;
-                      let message = `Hej @everyone, **Rysiek** właśnie wrzucił filmik!\n!\n${parsed.link}`
+                      let message = `Hej @everyone, **Rysiek** właśnie wrzucił filmik!\n\n${parsed.link}`
                       channel.send(message);
                     console.log(data.items[0]);
                   }
